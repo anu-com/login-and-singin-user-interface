@@ -1,0 +1,31 @@
+<% include('../layouts/header.ejs')  %>
+
+<%  
+   if(typeof massage !== 'undefined'){
+    %>
+        <p style="color: green;"><%= massage %></p>
+        <%
+   }
+%>
+
+<h1>User Registration</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Name">
+    <br><br>
+    <input type="email" name="email" placeholder="Email">
+    <br><br>
+    <input type="text" name="mobile" placeholder="Mobile">
+    <br><br>
+    <input type="file" name="image">
+    <br><br>
+    <input type="password" name="password" placeholder="Password">
+    <br><br>
+    <input type="submit" value="Register">
+
+</form>
+
+<button><a href="/login">Login</a></button>
+
+<% include('../layouts/footer.ejs')  %>
+

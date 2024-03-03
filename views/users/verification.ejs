@@ -1,0 +1,21 @@
+<% include('../layouts/header.ejs')  %>
+
+<h1>Verification</h1>
+
+<% 
+    if(typeof massage !== 'undefined'){
+        %>
+        <h3><%= massage %></h3>
+        <%
+    }
+    
+%>
+
+<form action="" method="post">
+
+    <input type="email" name="email" placeholder="Email">
+    <br><br>
+    <input type="submit" value="send verification link">
+</form>
+
+<% include('../layouts/footer.ejs') %>
